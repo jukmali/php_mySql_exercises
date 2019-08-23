@@ -1,0 +1,24 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #333333;
+    margin: 20px;
+}
+h1:before {
+    content: 'R0315 - Web App Development with PHP/SQL';
+    display: block;
+    font-size: 60%;
+    font-style: italic;
+}
+h1 {
+    height: 80px;
+    background: url('../img/php-logo.jpg') no-repeat right top;
+    background-size: 125px;
+    color: #282a25;
+    text-shadow: 1px 1px 1px #899ddc;
+}
+h2 {
+    color: #282a25;
+}
+hr {
+    border: 1px solid #899ddc;
+}
