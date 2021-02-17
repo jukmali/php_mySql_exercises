@@ -12,7 +12,7 @@
 		echo ("a * b = ". "$a * $b = ". ($a * $b));
 		echo "<br>";
 		
-		echo ("a / b = ". "$a * $b = ". ($a / $b));
+		echo ("a / b = ". "$a / $b = ". ($a / $b));
 		echo "<br>";
 		
 ?>
