@@ -25,7 +25,7 @@ require_once('dbinfo.php');
 
     if (!empty($username) && !empty($password1) && !empty($password2) && !empty($city) && ($password1 == $password2)) {
       // Check that the provided username does not yet exist in the database
-      $query = "SELECT * FROM user WHERE username = '$username'";
+      $query = "SELECT * FROM customer WHERE username = '$username'";
       $data = mysqli_query($dbc, $query);
       if (mysqli_num_rows($data) == 0) {
         // The username does not exist yet, so insert the data into the database.
@@ -35,7 +35,7 @@ require_once('dbinfo.php');
         mysqli_query($dbc, $query);
         
         // Get the userid of the just created account
-        $query = "SELECT userid FROM user WHERE username = '$username'";
+        $query = "SELECT userid FROM customer WHERE username = '$username'";
         $data = mysqli_query($dbc, $query);
         $row = mysqli_fetch_array($data);
         
