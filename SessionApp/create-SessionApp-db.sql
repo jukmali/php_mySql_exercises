@@ -12,7 +12,7 @@ USE session_db;
 GRANT DELETE,INSERT,SELECT,UPDATE ON session_db.* TO 'yt4Wvs67_jer335'@'localhost';
 
 -- Table structure for table user
-CREATE TABLE user (
+CREATE TABLE customer (
   userid int NOT NULL AUTO_INCREMENT,
   username varchar(16) NOT NULL,
   password varchar(40) NOT NULL,
