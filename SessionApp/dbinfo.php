@@ -14,9 +14,17 @@
         $connectstr_dbusername = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
         $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
     }
+
     // Define database connection constants
-    define('DB_HOST', $connectstr_dbhost);
-    define('DB_USER',  $connectstr_dbusername);
-    define('DB_PASSWORD', $connectstr_dbpassword);
-    define('DB_NAME', $connectstr_dbname);
+    if($connectstr_dbhost != ""){
+		define('DB_HOST', $connectstr_dbhost);
+		define('DB_USER',  $connectstr_dbusername);
+		define('DB_PASSWORD', $connectstr_dbpassword);
+		define('DB_NAME', $connectstr_dbname);
+	} else {
+		define('DB_HOST', "localhost");
+		define('DB_USER',  "yt4Wvs67_jer335");
+		define('DB_PASSWORD', "PE3GXn3qJpwEvybr");
+		define('DB_NAME', "session_db");
+	}
 ?>
