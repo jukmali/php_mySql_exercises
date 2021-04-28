@@ -31,7 +31,7 @@ require_once('dbinfo.php');
         // The username does not exist yet, so insert the data into the database.
       	// No need to add userid, because teh userid is configured with AUTO-INCREMENT in the table. MySQL will automatically generate the userid
         // SHA is used to encrypt the password
-      	$query = "INSERT INTO user (username, password, city) VALUES ('$username', SHA('$password1'), '$city')"; 
+      	$query = "INSERT INTO customer (username, password, city) VALUES ('$username', SHA('$password1'), '$city')"; 
         mysqli_query($dbc, $query);
         
         // Get the userid of the just created account
